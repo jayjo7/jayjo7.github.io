@@ -70,6 +70,10 @@ background-image:  linear-gradient(to top, #3C3C3C 0%, red 100%)
     
 }
 
+#menuItem{
+    margin-top: 20px;
+}
+
 
 /* --------------------------------------
    menu - End
