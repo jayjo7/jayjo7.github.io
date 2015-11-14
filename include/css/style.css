@@ -1,7 +1,28 @@
+/* --------------------------------------
+   common - Start
+  -------------------------------------- */
 *{
     padding: 0;
     margin:0;
 }
+
+body {
+           margin-right: -15px;
+           margin-left: -15px;
+
+
+}
+
+
+#sectionHeader{
+    
+    text-align: center;
+    
+}
+
+/* --------------------------------------
+   common - End
+  -------------------------------------- */
 
 /*
 .navbar-brand
@@ -63,10 +84,9 @@ background-image:  linear-gradient(to top, #3C3C3C 0%, red 100%)
 /* --------------------------------------
    menu - Start
   -------------------------------------- */
-
-#menuHeader{
+#menu{
     
-    text-align: center;
+    margin:20px
     
 }
 
@@ -78,6 +98,8 @@ background-image:  linear-gradient(to top, #3C3C3C 0%, red 100%)
 /* --------------------------------------
    menu - End
   -------------------------------------- */
+
+
 
 
 /* Landscape phone to portrait tablet */
