@@ -81,6 +81,11 @@ background-image:  linear-gradient(to top, #3C3C3C 0%, red 100%)
   -------------------------------------- */
 
 
+#announcements{
+    
+     margin:20px
+}
+
 /* --------------------------------------
    menu - Start
   -------------------------------------- */
@@ -93,13 +98,37 @@ background-image:  linear-gradient(to top, #3C3C3C 0%, red 100%)
 #menuItem{
     margin-top: 20px;
 }
-
+#addToCart{
+    margin-top: 15px;
+}
 
 /* --------------------------------------
    menu - End
   -------------------------------------- */
+/* --------------------------------------
+   footer - Start
+  -------------------------------------- */
 
+   footer{
+      background: #333;
+      
+      font-size:24px;
+      color: #eee;
+   
+      padding: 10px;
 
+   }
+
+#poweredby{
+    
+    margin:15px;
+    font-size: 16px;
+    text-align: center;
+    
+}
+/* --------------------------------------
+   footer - end
+  -------------------------------------- */
 
 
 /* Landscape phone to portrait tablet */
