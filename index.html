@@ -122,7 +122,9 @@
                                                         <h3>Ghee Roast Dosai</h3>
                                                     </div>
                                                     <div class="col-sm-4">
-                                                        <button type="button" class="btn btn-block btn-info" id="addToCart"><i class="icon-large icon-shopping-cart"></i>$6.99</button>
+                                                        <!--<button type="button" class="btn btn-block btn-info" id="addToCart"><i class="icon-large icon-shopping-cart"></i>$6.99</button> -->
+                                                        <a href="#myModal" role="button" class="btn btn-block btn-info" data-toggle="modal" id="addToCart"> <span class="glyphicon glyphicon-icon-shopping-cart"></span> $6.99</a>	
+
                                                     </div>
                                                 </div>
                                                 <p>Dosai cooked paper-thin with Ghee (clarified butter). Served with 4 accompaniments.</p>
@@ -232,6 +234,89 @@
                 </div>
             </div>
         </div>
+    
+    
+    
+<!-- modal code - Start -->
+    								<div class="modal fade"	id="myModal">
+									<div class="modal-dialog">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button class="close" data-dismiss="modal">&times;</button>
+												<h4 class="modal-title">Ghee Roast Dosai</h4>
+											</div>
+											<div class="modal-body">
+                                                
+                                                <div class="row">
+                                                    <div class="col-sm-2">
+                                                        <h4>Size:</h4>
+                                                    </div>
+                                                    <div class="col-sm-10">
+                                                        <div class="btn-group" data-toggle="buttons">
+                                                          <label class="btn btn-success active">
+                                                            <input type="radio" name="options" id="option1" autocomplete="off" > Small (S)
+                                                          </label>
+                                                          <label class="btn btn-success">
+                                                            <input type="radio" name="options" id="option2" autocomplete="off" checked> Medium (M)
+                                                          </label>
+                                                          <label class="btn btn-success">
+                                                            <input type="radio" name="options" id="option3" autocomplete="off"> Large (L)
+                                                          </label>
+                                                          <label class="btn btn-success">
+                                                            <input type="radio" name="options" id="option4" autocomplete="off"> Extra Large (XL)
+                                                          </label>                                                    
+                                                        </div>
+                                                    </div>   
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-2">
+                                                        <h4>Spice:</h4>
+                                                    </div>
+                                                    <div class="col-sm-10">
+                                                        
+                                                        <div class="btn-group" data-toggle="buttons">
+                                                          <label class="btn btn-warning active">
+                                                            <input type="radio" name="options" id="option1" autocomplete="off" > Normal
+                                                          </label>
+                                                          <label class="btn btn-warning">
+                                                            <input type="radio" name="options" id="option2" autocomplete="off" checked> Medium
+                                                          </label>
+                                                          <label class="btn btn-warning">
+                                                            <input type="radio" name="options" id="option3" autocomplete="off"> High
+                                                          </label>
+                                                        </div>
+                                                    
+                                                </div>      
+                                                </div>   
+                                                <div class="row">
+                                                    <div class="col-sm-2">
+                                                        <h4>Message:</h4>
+                                                    </div>
+                                                                                                        <div class="col-sm-10">
+
+                                                <div>
+                                             															<textarea class="form-control" id="inputMessage" placeholder="Message to Kitchen" rows="1" size="40"></textarea>
+   
+                                            </div>
+                                                </div>
+                                                </div>
+                                              
+
+
+											</div>
+											<div class="modal-footer">
+												<button class="btn btn-default" data-dismiss="modal" type="button">Cancel</button>
+												<button class="btn btn-info"  type="button">Add to Cart</button>
+
+
+											</div>
+										</div>
+									</div>
+								</div>										
+
+
+							</div>
+    <!-- modal code - End -->
     
 		<footer>
 
