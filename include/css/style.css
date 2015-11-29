@@ -9,8 +9,8 @@
 body {
            margin-right: -15px;
            margin-left: -15px;
-
-
+         
+          
 }
 
 
@@ -23,21 +23,100 @@ body {
 /* --------------------------------------
    common - End
   -------------------------------------- */
+  /* --------------------------------------
+   Cart Modal - Start
+  -------------------------------------- */
 
-/*
+.modal-header{
+
+  border-bottom: 1px solid #449D44;
+}
+
+.modal-footer{
+
+  border-top: 1px solid #449D44;
+}
+
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td { border-top: none; }
+
+
+.modal-body{
+  padding: 0 15px;
+}
+
+#itemName-th{
+    
+}
+
+#unitPrice-th{
+    text-align: center
+}
+#qty-th{
+    text-align: center
+}
+#price-th{
+    
+     text-align: center
+    
+}
+
+#remove-th{
+    text-align: right;
+}
+
+/* --------------------------------------
+    Cart Modal - End
+  -------------------------------------- */
+
+ /* --------------------------------------
+   topNav-ov - End
+  -------------------------------------- */ 
+
+
 .navbar-brand
 {
     padding: 7px 15px
 }
 
 
-.navbar-inverse{
+.navbar{
 
-background-image:  linear-gradient(to top, #3C3C3C 0%, red 100%)
+  background-image:  linear-gradient(to top, #3C3C3C 0%, green 100%);
+  margin-bottom:0;
 }
 
-*/
+#topNavbar a{
+  color: black;
+}
 
+.cart{
+  line-height: 3.1;
+  border-radius: 0;
+  display: block;
+  font-size:100%;
+  padding:8.2px;
+}
+
+.order, .menuNav, .queueNav{
+  line-height: 3.1;
+  border-radius: 0;
+  display: block;
+  font-size:100%;
+}
+
+#orderForm{
+
+  padding: 0 5px 0 20px;
+}
+
+#cartNav{
+  font-weight: bold;
+}
+
+
+/* --------------------------------------
+   topNav-ov - End
+  -------------------------------------- */
 
 /* --------------------------------------
    Carousel - Start
@@ -85,9 +164,9 @@ background-image:  linear-gradient(to top, #3C3C3C 0%, red 100%)
   -------------------------------------- */
 #announcements{
     
-    padding:25px 10px;
-        margin-right: -15px;
-           margin-left: -15px;
+    padding:5px 10px;
+    margin: 10px, -15px;
+
 }
 
 /* --------------------------------------
@@ -99,8 +178,19 @@ background-image:  linear-gradient(to top, #3C3C3C 0%, red 100%)
   -------------------------------------- */
 #menu{
     
-    padding:20px
+    padding:0 20px 20px 20px;
     
+}
+
+#menuList{
+
+  font-size:20px;
+  color: black;
+
+}
+
+#menuList a{
+  color: black;
 }
 
 #menuItem{
@@ -109,6 +199,7 @@ background-image:  linear-gradient(to top, #3C3C3C 0%, red 100%)
 #addToCart{
     margin-top: 15px;
 }
+
 
 /* --------------------------------------
    menu - End
@@ -143,6 +234,7 @@ margin-left: -15px;
    footer - Start
   -------------------------------------- */
 
+/*
    footer{
        
       background: #333;
@@ -153,14 +245,39 @@ margin-left: -15px;
 
    }
 
+      footer-ov{
+       
+      background: #333;
+      font-size:23px;
+      color: #eee;
+      padding: 30px;
+      margin: 0, -15px, -15px;
 
-#poweredby{
-    
-    margin:15px;
+
+   }
+   */
+
+ #footer-row
+ {
+  margin-top: 20px;
+  position: relative;
+ }  
+
+
+#footer-poweredby{
+    padding: 10px;
+    margin:15px,-15px,0,-15px;
     font-size: 16px;
     text-align: center;
-    
+    color: #eee;
+
 }
+
+#poweredby,  #poweredby a{
+
+  color: red;
+
+  }
 /* --------------------------------------
    footer - end
   -------------------------------------- */

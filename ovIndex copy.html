@@ -10,84 +10,64 @@
         <link href="include/css/bootstrap-glyphicons.css" rel="stylesheet">
         <script src="include/js/jquery-1.11.3.js"></script>
         <script src="bootstrap-3.3.5-dist-4/js/bootstrap.js"></script>
-    </head><body data-spy="scroll">
+    </head>
+
+    <body id="mainBody" data-spy="scroll">
         <div class="container-fluid" id="main">
-            <div class="row">
-                <div class="col-md-12">
-                    <a class="navbar-brand" href="/"> <img src="img/headerlogo.png" width="100" alt="Your Logo"></a>
-                    <ul class="nav nav-tabs pull-right">
-                        <li>
-                            <a href="#">Our Menu</a>
-                        </li>
-                        <li><a href="#">About Us</a>
-                        </li><li><a href="#"><i class="fa fa-star fa-fw"></i>Find Us</a>
-                        </li></ul>
+            <div class="navbar navbar-default navbar navbar-static-top" id="topNav">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#"><span>Brand</span></a>
                 </div>
-            </div>
-            
-            <div class="carousel slide" id="myCarousel" data-interval="5000">
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                    <li class="active" data-slide-to="0" data-target="#myCarousel"></li>
-                    <li data-slide-to="1" data-target="#myCarousel"></li>
-                    <li data-slide-to="2" data-target="#myCarousel"></li>
-                </ol>
-                <!-- Wrapper for Slides -->
-                <div class="carousel-inner">
-                    <div class="item active" id="slide1">
-                        <!--<img src="http://placehold.it/1200x500"> -->
-                        <div class="carousel-caption">
-                            <h1>Bootstrap 3</h1>
-                            <p>Learn how to build your first responsive website with the brand new twitter
-                                BootStrap 3!</p>
-                        </div>
-                    </div>
-                    <div class="item" id="slide2">
-                        <!--<img src="http://placehold.it/1200x500">-->
-                        <div class="carousel-caption">
-                            <h1>Jayakumar</h1>
-                            <p>Jayakumar is learning how to use bootstarp 3</p>
-                        </div>
-                    </div>
-                    <div class="item" id="slide3">
-                        <!--<img src="http://placehold.it/1200x500">-->
-                        <div class="carousel-caption">
-                            <h1>Hello I am Done!</h1>
-                            <p>Done learning BootStarp 3 it is intresting!!!</p>
-                        </div>
-                    </div>
+                <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+                  <ul class="nav navbar-nav navbar-right">
+                    <li class="active">
+                      <a href="#">Home</a>
+                    </li>
+                    <li>
+                      <a href="#">Contacts</a>
+                    </li>
+                  </ul>
                 </div>
-                <!-- Controls> -->
-                <a class="left carousel-control" data-slide="prev" href="#myCarousel"><span class="icon-prev"></span></a>
-                <a class="right carousel-control" data-slide="next" href="#myCarousel"><span class="icon-next"></span></a>
+              </div>
             </div>
-            <!-- end myCarousel"> -->
+
             
+
+       <!--     
             <div class="row" id="announcements">
 
-				<div class="col-12">
+                <div class="col-12">
 
-					<div class="alert alert-success alert-block fade in" id="sucessAlert">
+                    <div class="alert alert-success alert-block fade in" id="sucessAlert">
 
-						<button type="button" class="close" data-dismiss="alert">×</button>
-						<h4>Success! </h4>
-						<p>You just made this element display by using JQuery. Click the 'x' in the top right corner to close</p>
+                        <button type="button" class="close" data-dismiss="alert">×</button>
+                        <h4>Success! </h4>
+                        <p>You just made this element display by using JQuery. Click the 'x' in the top right corner to close</p>
 
-					</div>
+                    </div>
                 </div>
-            </div>    
+            </div>   
+
+            --> 
             <div class="row" id="menu">
                 <div class="col-sm-12">
-                    <h1 id="sectionHeader">Our Menu</h1>
-                    <div class="tabbable">
-                        <ul class="nav nav-tabs nav-justified" role="tablist">
+                    <h1 id="sectionHeader">Menu</h1>
+                    <div class="tabbable" >
+                        <ul class="nav nav-tabs nav-justified" role="tablist" id="menuList">
+                            <li role="presentation" >
+                                <a href="#tab1" data-toggle="tab" role="tab" aria-controls="tab1">Dosai</a>
+                            </li>
+                            <li role="presentation" >
+                                <a href="#tab1" data-toggle="tab" role="tab" aria-controls="tab2">Tiffin Items</a>
+                            </li>
                             <li role="presentation" class="active">
-                                <a href="#tab1" data-toggle="tab" role="tab" aria-controls="tab1">Dosai </a>
-                            </li>
-                            <li role="presentation">
-                                <a href="#tab2" data-toggle="tab" role="tab" aria-controls="tab2">Tiffen Items</a>
-                            </li>
-                            <li role="presentation">
                                 <a href="#tab3" data-toggle="tab" role="tab" aria-controls="tab3">Drinks</a>
                             </li>
                             <li role="presentation">
@@ -218,35 +198,7 @@
                     </div>
                 </div>
             </div>
-            
-            <div class="row" id="aboutUs">
 
-				<div class="col-12">
-                    <h1 id="sectionHeader">About US</h1>
-                    <div class="well">
-
-                        <p>Locavore gentrify twee put a bird on it. Vegan street art migas vice. Hashtag health goth plaid dreamcatcher. Cray chambray ugh taxidermy microdosing hashtag. Retro blog pickled chambray, kinfolk four loko salvia chillwave hella yr humblebrag ramps normcore kogi. Actually green juice fingerstache umami truffaut small batch mumblecore. Fanny pack offal whatever, pitchfork fashion axe gastropub +1 hella bespoke.</p>
-
-
-								<p>Locavore gentrify twee put a bird on it. Vegan street art migas vice. Hashtag health goth plaid dreamcatcher. Cray chambray ugh taxidermy microdosing hashtag. Retro blog pickled chambray, kinfolk four loko salvia chillwave hella yr humblebrag ramps normcore kogi. Actually green juice fingerstache umami truffaut small batch mumblecore. Fanny pack offal whatever, pitchfork fashion axe gastropub +1 hella bespoke.</p>
-
-
-
-					</div>
-                    
-            </div>
-            </div>
-                
-                
-            <div class="row" id="findUs">
-                <div class="col-sm-12">
-                    <h1 id="sectionHeader">Find Us</h1>
-                    <div class="map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2688.8232324873024!2d-122.13746564870941!3d47.629567279084064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906da723de83a5%3A0xce347705e5d0941!2s2125+Bel-Red+Rd%2C+Redmond%2C+WA+98052!5e0!3m2!1sen!2sus!4v1447535976284" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen=""></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
     
     
     
@@ -330,58 +282,18 @@
 
 							
     <!-- modal code - End -->
-    
-		<footer>
 
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-sm-3">
-							<h6>Copyright © 2015 Jayakumar</h6>
+            <div class="row" id="footer-row">
+                <div class="navbar navbar-default navbar-bottom navbar-inverse" id="footer-poweredby">
+                    <div class="container-fluid">
 
-					</div>
-
-					<div class="col-sm-3">
-
-						<h6>Navigation </h6>
-						<ul class="unstyled">
-							<li><a href="#">Home</a></li>
-							<li><a href="#">Services</a></li>
-							<li><a href="#">Links</a></li>
-							<li><a href="#">Contact</a></li>
-						</ul>
-
-
-					</div>
-					<div class="col-sm-3">
-						<h6>Follow Us </h6>
-						<ul class="unstyled">
-							<li><a href="#">Twitter</a></li>
-							<li><a href="#">Facebook</a></li>
-							<li><a href="#">Google Plus</a></li>
-						</ul>
-
-					</div>
-					<div class="col-sm-3 ">
-						<address>
-                        <strong>Wehsheets LLC.</strong><br>
-                        1355 Market Street, Suite 900<br>
-                        Lynnwood, WA 98087<br>
-                        <abbr title="Phone">P:</abbr> (123) 456-7890
-                        </address>
-
-					</div>
-				</div>
-                <div class="row">
                     <div class="col-sm-12">
-                        <p id="poweredby">Powered by <a href="http://websheets.io"> Websheets</a>™</p>
+                        <p >Powered by <span id='poweredby'><a href="http://websheets.io"> Websheets</a>&trade;</span></p>
                     
                     </div>
-                
+                    </div>
                 </div>
+            </div>
 
 
-
-			</div>
-
-		</footer>
 </body></html>
