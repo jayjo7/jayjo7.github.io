@@ -40,44 +40,14 @@
                                 <div class="label label-success queueNav"> <a href="\"><span class="glyphicon glyphicon-grain" aria-hidden="true"></span> Queue </a></div>
                                 
                             </li>
-
-                            <li class="dropdown">
-
-                                <div class="label label-success order"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-grain" aria-hidden="true"></span> Orders<strong class="caret"> </strong></a>
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <a href="#">Today's</a>
-                                    </li>
-                                    <li class="divider"></li>                               
-
-                                    <li>
-                                        <a href="#">Yesterday's</a>
-                                    </li>
-                                    <li class="divider"></li>                               
-
-                                    <li>
-                                            <form class="form-inline" id="orderForm">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" id="orderNumberNav" placeholder="Order#">
-                                                </div>
-                                                <button type="submit" class="btn btn-success btn-xs">Submit</button>
-                                            </form>
-
-                                        <!--
-                                        <div class="row">
-                                            <div class="col-sm-8">
-                                                <input type="text" class="form-control" placeholder="Order#">
-                                            </div>
-                                            <div class="col-sm-4">
-                                                <button type="submit" class="btn btn-success btn-xs">Submit</button>
-                                            </div>    
-                                        </div>
-
-                                    -->
-                                    </li>                                    
-                                </ul> <!--end dropdown-menu -->
-
-                            </li>
+                            <li>
+                                <div class="label label-success cart"> <a href="#whichOrdersModal" role="button" class="btn" data-toggle="modal" id="orderNav"><span class="glyphicon glyphicon-grain" aria-hidden="true"></span> Orders </a></div>
+                                
+                            </li> 
+                            
+                                
+                                
+                                
                             <li>
                                 <div class="label label-success cart"> <a href="#myModal" role="button" class="btn" data-toggle="modal" id="cartNav"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> 0 item(s)</a></div>
                                 
@@ -252,6 +222,58 @@
                 </div>
             </div>
 
+                        <!-- whichOrdersModal modal code - Start -->
+                                <div class="modal fade" id="whichOrdersModal">
+                                    <div class="modal-dialog modal-md">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button class="close" data-dismiss="modal">&times;</button>
+                                                <h3 class="modal-title text-center" ><span class="glyphicon glyphicon-grain" aria-hidden="true"></span> Which Order(s)</h3>
+                                            </div>
+                                            <div class="modal-body">
+
+                                                <div class="row" id="whichOrdersItem">
+                                                    <div class="col-md-12">
+                                            <button type="button" class="btn btn-success btn-lg btn-block">Today's</button>
+                                    </div>
+                                                </div>
+                                                
+                                                <div class="row" id="whichOrdersItem">
+                                                    <div class="col-md-12">
+                                            <button type="button" class="btn btn-success btn-lg btn-block">Yesterday's</button>
+                                    </div>
+                                                </div>
+                                                
+                                                
+                                                
+                                                <div class="row" id="whichOrdersItem">
+                                                     <div class="col-md-12">
+                                                         <div class="col-md-6 text-right">
+                                                        <div class="form-group-lg">
+                                                            <input class="form-control"  placeholder="Order#" type="text">
+                                                        </div>
+                                                             </div>
+                                                         <div class="col-md-6 text-left">
+                                                            <button type="submit" class="btn btn-success btn-lg">Submit</button>
+                                                         </div>
+                                                    </div>
+                                                </div>
+                                                
+
+                                            </div>
+                                            <div class="modal-footer ">
+                                               <!-- <div class="row">
+                                                    <div class="col-sm-12 text-center">
+                                                        <button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
+                                                        <button class="btn btn-success"  type="button">Place Order</button>
+                                                    </div>
+                                                </div>
+                                                -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>  
+            <!-- whichOrdersModal modal code - End -->
 
 
             <!-- modal code - Start -->
