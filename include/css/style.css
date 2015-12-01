@@ -49,19 +49,19 @@ body {
 }
 
 #unitPrice-th{
-    text-align: center
+    text-align: center;
 }
 #qty-th{
-    text-align: center
+    text-align: center;
 }
 #price-th{
     
-     text-align: center
+     text-align: center;
     
 }
 
 #remove-th{
-    text-align: right;
+    text-align: center;
 }
 
 /* --------------------------------------
