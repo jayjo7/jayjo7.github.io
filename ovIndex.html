@@ -55,7 +55,7 @@
                                     <li>
                                             <form class="form-inline" id="orderForm">
                                                 <div class="form-group">
-                                                    <input type="text" class="form-control" id="orderNumber" placeholder="Order#">
+                                                    <input type="text" class="form-control" id="orderNumberNav" placeholder="Order#">
                                                 </div>
                                                 <button type="submit" class="btn btn-success btn-xs">Submit</button>
                                             </form>
@@ -280,16 +280,16 @@
                                                         <tr>
                                                             <td id="itemName-th">Plain Dosai</td>
                                                             <td id="unitPrice-th">$6.99</td>
-                                                            <td id="qty-th">1</td>
+                                                            <td id="qty-th"><input class="form-control" id="inputPhone" placeholder="Qty" type="text" size="2"></td>
                                                             <td id="price-th">$6.99</td>
                                                             <td id="remove-th"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></td>
                                                         </tr>                                                          
                                                     </table>
                                                 </div>
-                                                    <div class="row>">
+                                                <div class="row>">
                                                         <div class="col-sm-6">
                                                         </div>
-                                                         <div class="col-sm-6">
+                                                        <div class="col-sm-6">
                                                              <div class="table-responsive">
                                                                 <table class="table table-striped">
                                                                     <tr>
@@ -310,41 +310,83 @@
                                                                 </table>
                                                             </div>
                                                         </div>
-                                                    </div>
+                                                </div>
                                                
+                                             <div class="container-fluid">    
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <form class="form-horizontal">
+                                                            <div class="form-group">
+                                                                <label class="col-lg-2 control-label" for="inputName">Name</label>
+                                                                <div class="col-lg-10">
+                                                                    <input class="form-control" id="inputName" placeholder="Name" type="text">
+                                                                </div>
+                                                            </div>  
+                                                            <div class="form-group">
+                                                                <label class="col-lg-2 control-label" for="inputPhone">Phone</label>
+                                                                <div class="col-lg-10">
+                                                                    <input class="form-control" id="inputPhone" placeholder="Phone#" type="text">
+                                                                </div>
+                                                            </div>                                                      
+                                                            <div class="form-group">
+                                                                <label class="col-lg-2 control-label" for="inputEmail">Email</label>
+                                                                <div class="col-lg-10">
+                                                                    <input class="form-control" id="inputEmail" placeholder="Email" type="text">
+                                                                </div>
+                                                            </div>  
+                                                            <div class="form-group">
+                                                                <label class="col-lg-2 control-label" for="inputMessage">Message</label>
+                                                                <div class="col-lg-10">
+                                                                    <input class="form-control" id="inputMessage" placeholder="Message to Kitchen" type="text">
+                                                                </div>
+                                                            </div>  
 
+                                                        </form>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                          <form class="form-horizontal"> 
+                                                        <div class="form-group text-center">
+                                                            
+                                                                <label class="radio-inline">
+                                                                  <input name="paymentRadioGroup" id="radio1" value="payNow" checked="" type="radio"> Pay Now
+                                                                </label>
+                                                                <label class="radio-inline">
+                                                                  <input name="paymentRadioGroup" id="radio2" value="payAtPickup" type="radio"> Pay At Pick up
+                                                                </label>
 
-                                                <h4>Popovers in a modal</h4>
-                                                <a href="#" class="btn btn-danger pop" data-toggle="popover" data-placement="top" data-original-title="You Clicked it!" data-content="I know you would!">Don't Click this button</a>
+                                                        </div>   
 
-                                                <h4>Tooltips in a modal</h4>
-                                                <a href="" data-original-title="Tooltip" rel="tooltip">This link </a> should have a tooltip, and so should  <a href="" data-original-title="Jayakumar" rel="tooltip">this one </a>!
+                                                        
+                                                            <div class="form-group">
+                                                                <label class="col-lg-2 control-label" for="inputCardNumber">Card#</label>
+                                                                <div class="col-lg-10">
+                                                                    <input class="form-control" id="inputCardNumber" placeholder="CardNumber" type="text">
+                                                                </div>
+                                                            </div>  
+                                                            <div class="form-group">
+                                                                <label class="col-lg-2 control-label" for="inputPhone">Exp Month</label>
+                                                                <div class="col-lg-10">
+                                                                    <input class="form-control" id="inputPhone" placeholder="MM" type="text">
+                                                                </div>
+                                                            </div>                                                      
+                                                            <div class="form-group">
+                                                                <label class="col-lg-2 control-label" for="inputEmail">Exp Year</label>
+                                                                <div class="col-lg-10">
+                                                                    <input class="form-control" id="inputEmail" placeholder="YYYY" type="text">
+                                                                </div>
+                                                            </div>  
+                                                            <div class="form-group">
+                                                                <label class="col-lg-2 control-label" for="inputMessage">CID/CVV</label>
+                                                                <div class="col-lg-10">
+                                                                    <input class="form-control" id="inputMessage" placeholder="CVV" type="text">
+                                                                </div>
+                                                            </div>  
 
-                                                <hr>
-                                                <p><small class="text-muted">PS. This form doesn't do anything. Just a heads up </small></p>
-
-                                                <form class="form-horizontal">
-                                                    <div class="form-group">
-                                                        <label class="col-lg-2 control-label" for="inputName">Name</label>
-                                                        <div class="col-lg-10">
-                                                            <input class="form-control" id="inputName" placeholder="Name" type="text">
-                                                        </div>
-                                                    </div>  
-                                                    <div class="form-group">
-                                                        <label class="col-lg-2 control-label" for="inputEmail">Email</label>
-                                                        <div class="col-lg-10">
-                                                            <input class="form-control" id="inputEmail" placeholder="Email" type="text">
-                                                        </div>
-                                                    </div>  
-                                                    <div class="form-group">
-                                                        <label class="col-lg-2 control-label" for="inputMessage">Message</label>
-                                                        <div class="col-lg-10">
-                                                            <textarea class="form-control" id="inputMessage" placeholder="Message" rows="3"></textarea>
-                                                            <button class="btn btn-success pull-right" type="submit">Send!</button>
-                                                        </div>
-                                                    </div>  
-
-                                                </form>
+                                                        </form>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
 
                                             </div>
                                             <div class="modal-footer">
