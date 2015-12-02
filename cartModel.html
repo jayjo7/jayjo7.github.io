@@ -1,0 +1,151 @@
+            <!-- modal code - Start -->
+                                <div class="modal fade" id="myModal">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button class="close" data-dismiss="modal">&times;</button>
+                                                <h3 class="modal-title text-center" ><span class="glyphicon glyphicon-grain" aria-hidden="true"></span>  Your Order</h3>
+                                            </div>
+                                            <div class="modal-body">
+
+                                                <div class="table-responsive">
+                                                    <table class="table table-striped">
+                                                        <tr>
+                                                            <th id="itemName-th">Item Name</th>
+                                                            <th id="unitPrice-th">Unit Price</th>
+                                                            <th id="qty-th">Qty</th>
+                                                            <th id="price-th">Price</th>
+                                                            <th id="remove-th">Remove</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td id="itemName-th">Plain Dosai</td>
+                                                            <td id="unitPrice-th">$6.99</td>
+                                                            <td id="qty-th">1</td>
+                                                            <td id="price-th">$6.99</td>
+                                                            <td id="remove-th"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></td>
+                                                        </tr>   
+                                                        <tr>
+                                                            <td id="itemName-th">Plain Dosai</td>
+                                                            <td id="unitPrice-th">$6.99</td>
+                                                            <td id="qty-th"><input class="form-control" id="inputPhone" placeholder="Qty" type="text" size="2"></td>
+                                                            <td id="price-th">$6.99</td>
+                                                            <td id="remove-th"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></td>
+                                                        </tr>                                                          
+                                                    </table>
+                                                </div>
+                                                <div class="row>">
+                                                        <div class="col-sm-6">
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                             <div class="table-responsive">
+                                                                <table class="table table-striped">
+                                                                    <tr>
+                                                                        <td id="remove-th">Sub Total :</td>
+                                                                        <td id="remove-th">$6.99</td>  
+                                                                    </tr>                                                                                                                                <tr>
+                                                                        <td id="remove-th">Discount :</td>
+                                                                        <td id="remove-th">( $1.99 )</td>  
+                                                                    </tr>
+                                                                     <tr>
+                                                                        <td id="remove-th">Tax :</td>
+                                                                        <td id="remove-th">$0.99</td>  
+                                                                    </tr>
+                                                                     <tr>
+                                                                        <td id="remove-th"><strong>Total :</strong></td>
+                                                                        <td id="remove-th"><strong>$5.99</strong></td>  
+                                                                    </tr>                                                                    
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                </div>
+                                               
+                                             <div class="container-fluid">    
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <form class="form-horizontal">
+                                                            <div class="form-group">
+                                                                <label class="col-lg-2 control-label" for="inputName">Name</label>
+                                                                <div class="col-lg-10">
+                                                                    <input class="form-control" id="inputName" placeholder="Name" type="text">
+                                                                </div>
+                                                            </div>  
+                                                            <div class="form-group">
+                                                                <label class="col-lg-2 control-label" for="inputPhone">Phone</label>
+                                                                <div class="col-lg-10">
+                                                                    <input class="form-control" id="inputPhone" placeholder="Phone#" type="text">
+                                                                </div>
+                                                            </div>                                                      
+                                                            <div class="form-group">
+                                                                <label class="col-lg-2 control-label" for="inputEmail">Email</label>
+                                                                <div class="col-lg-10">
+                                                                    <input class="form-control" id="inputEmail" placeholder="Email" type="text">
+                                                                </div>
+                                                            </div>  
+                                                            <div class="form-group">
+                                                                <label class="col-lg-2 control-label" for="inputMessage">Message</label>
+                                                                <div class="col-lg-10">
+                                                                    <input class="form-control" id="inputMessage" placeholder="Message to Kitchen" type="text">
+                                                                </div>
+                                                            </div>  
+
+                                                        </form>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                          <form class="form-horizontal"> 
+                                                        <div class="form-group text-center">
+                                                            
+                                                                <label class="radio-inline">
+                                                                  <input name="paymentRadioGroup" id="radio1" value="payNow" checked="" type="radio"> Pay Now
+                                                                </label>
+                                                                <label class="radio-inline">
+                                                                  <input name="paymentRadioGroup" id="radio2" value="payAtPickup" type="radio"> Pay At Pick up
+                                                                </label>
+
+                                                        </div>   
+
+                                                        <div id="cardinfo">
+                                                            <div class="form-group">
+                                                                <label class="col-lg-2 control-label" for="inputCardNumber">Card#</label>
+                                                                <div class="col-lg-10">
+                                                                    <input class="form-control" id="inputCardNumber" placeholder="CardNumber" type="text">
+                                                                </div>
+                                                            </div>  
+                                                            <div class="form-group">
+                                                                <label class="col-lg-2 control-label" for="inputPhone">ExpMM</label>
+                                                                <div class="col-lg-10">
+                                                                    <input class="form-control" id="inputPhone" placeholder="MM" type="text">
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group">
+                                                                <label class="col-lg-2 control-label" for="inputEmail">ExpYYYY</label>
+                                                                <div class="col-lg-10">
+                                                                    <input class="form-control" id="inputEmail" placeholder="YYYY" type="text">
+                                                                </div>
+                                                            </div>  
+                                                            <div class="form-group">
+                                                                <label class="col-lg-2 control-label" for="inputMessage">CID/CVV</label>
+                                                                <div class="col-lg-10">
+                                                                    <input class="form-control" id="inputMessage" placeholder="CVV" type="text">
+                                                                </div>
+                                                            </div>  
+                                                        </div>
+                                                        </form>
+                                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            </div>
+                                            <div class="modal-footer ">
+                                                <div class="row">
+                                                    <div class="col-sm-12 text-center">
+                                                        <button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
+                                                        <button class="btn btn-success"  type="button">Place Order</button>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>  
+            <!-- modal code - End -->

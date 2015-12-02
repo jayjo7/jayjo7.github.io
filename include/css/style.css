@@ -86,14 +86,11 @@ body {
   -------------------------------------- */
 
 
-.glyphicon-grain{
+.glyphicon-grain, .glyphicon-shopping-cart{
     
     margin:10px;
 }
 
-#menuBtn{
-    font-size: 1.5em;
-}
 
  /* --------------------------------------
    topNav-ov - Start
