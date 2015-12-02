@@ -85,9 +85,20 @@ body {
     Cart Modal - End
   -------------------------------------- */
 
+
+.glyphicon-grain{
+    
+    margin:10px;
+}
+
+#menuBtn{
+    font-size: 1.5em;
+}
+
  /* --------------------------------------
    topNav-ov - Start
   -------------------------------------- */ 
+/*
 #orderNumberNav{
     width: 80px;
 }
@@ -97,13 +108,13 @@ body {
     padding: 7px 15px
 }
 
-
+*/
 .navbar{
 
   background-image:  linear-gradient(to top, #3C3C3C 0%, green 100%);
   margin-bottom:0;
 }
-
+/*
 #topNavbar a{
   color: black;
 }
@@ -132,7 +143,7 @@ body {
   font-weight: bold;
 }
 
-
+*/
 /* --------------------------------------
    topNav-ov - End
   -------------------------------------- */
