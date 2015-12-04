@@ -38,8 +38,34 @@ body {
    Orders Modal - End
   -------------------------------------- */
 
+  /* --------------------------------------
+   Track your order Modal - Start
+  -------------------------------------- */
+
+#tracOrderWell{
+    
+    margin: 20px 0;
+    
+}
+
+    .step {
+      vertical-align: top;
+    }
+
+    .step img {
+      width: 109px;
+      height: 78px; 
+    }
+
+      td[class*="step"] img {
+        width: 86px !important;
+        height: 62px !important;
+      }
 
 
+  /* --------------------------------------
+    Track your order Modal - End
+  -------------------------------------- */
   /* --------------------------------------
    Cart Modal - Start
   -------------------------------------- */
@@ -79,6 +105,10 @@ body {
 
 #remove-th{
     text-align: center;
+}
+
+#right-td{
+    text-align: right;
 }
 
 /* --------------------------------------

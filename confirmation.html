@@ -33,15 +33,65 @@
                 
                 
  </div>
+            
 
-<!-- modal code - Start -->
+<!-- OrderTracking modal  code - End -->
+            
+            
+                        <!-- modal code - Start -->
 
                                             <div class="modal-header">
-                                               <!-- <button class="close" data-dismiss="modal">&times;</button> -->
-                                                <h3 class="modal-title text-center" ><span class="glyphicon glyphicon-grain" aria-hidden="true"></span>  Your Order</h3>
+                                                
+                                                <h3 class="modal-title text-center" ><span class="glyphicon glyphicon-grain" aria-hidden="true"></span>Order Confirmation [ #137 ]</h3>
                                             </div>
                                             <div class="modal-body">
+                                           
+                                                <div class=container-fluid>
+                                                <div class="row"> 
+                                                    
+                                                    
+                                                        <div class="table-responsive">
+                                                            <table class="table">
+                                                        <tr>
 
+                                                          <!-- STEP ONE -->
+                                                          <td class="step text-center">
+                                                            <img src="img/confirmation/1-on.png"  width='100' alt="Order Placed" />
+                                                            <br/>
+                                                            <b>✓</b>
+                                                            <br/>Order Placed
+                                                          </td>
+                                                          <td class="step text-center">
+                                                              <a href="#" id='moveOrderStatus'>
+                                                            <img src="img/confirmation/2-off.png" alt="In Kitchen" />
+                                                              </a>
+                                                              <br />
+                                                            <b>&nbsp;</b><br />In Kitchen
+                                                           </td>
+
+                                                           <td class="step text-center">
+                                                               <a href="#" id='moveOrderStatus'>
+                                                                    <img src="img/confirmation/3-off.png" alt="Ready for Pickup" /><br />
+                                                               </a>
+
+                                                           <b>&nbsp;</b><br />Ready for Pickup
+                                                           </td>
+
+                                                           <td class="step text-center">
+                                                                <a href="#" id='moveOrderStatus'>
+                                                                    <img src="img/confirmation/4-off.png" alt="Not Delivered" /><br />
+                                                               </a>
+
+                                                           <b>&nbsp;</b><br />Order Delivered
+                                                           </td>
+
+                                                        </tr>
+                                                      </table> 
+                                                    </div>
+                                                    </div>
+                                                
+
+                                                <div class="row">
                                                 <div class="table-responsive">
                                                     <table class="table table-striped">
                                                         <tr>
@@ -61,16 +111,38 @@
                                                         <tr>
                                                             <td id="itemName-th">Plain Dosai</td>
                                                             <td id="unitPrice-th">$6.99</td>
-                                                            <td id="qty-th"><input class="form-control" id="inputPhone" placeholder="Qty" type="text" size="2"></td>
+                                                            <td id="qty-th">5</td>
                                                             <td id="price-th">$6.99</td>
                                                             <td id="remove-th"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></td>
                                                         </tr>                                                          
                                                     </table>
                                                 </div>
+
+                                                </div>
                                                 <div class="row>">
-                                                        <div class="col-sm-6">
+                                                    <div class="col-sm-6">
+                                                        <div class="well text-center">
+                                                        <div>
+                                                            Name: <strong>Customer Name</strong>
                                                         </div>
-                                                        <div class="col-sm-6">
+                                                        <div>
+                                                            Phone: <strong>Customer Phone</strong>
+                                                        </div>
+                                                        <div>
+                                                            Email: <strong>Customer Email</strong>
+                                                        </div>
+                                                        <div>
+                                                        Message: <strong>Message to Kitchen</strong>
+                                                        </div>
+                                                        <div>
+                                                        Time Ordered:<strong>TimeOrderReceived</strong>
+                                                        </div>
+                                                        <div>
+                                                        Total Item Ordered: <strong>TotalItem</strong>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6">
                                                              <div class="table-responsive">
                                                                 <table class="table table-striped">
                                                                     <tr>
@@ -87,100 +159,29 @@
                                                                      <tr>
                                                                         <td id="right-td"><strong>Total :</strong></td>
                                                                         <td id="right-td"><strong>$5.99</strong></td>  
-                                                                    </tr>                                                                    
+                                                                    </tr> 
+                                                                     <tr>
+                                                                        <td id="right-td"><strong>Payment :</strong></td>
+                                                                        <td id="right-td"><strong>At Pickup</strong></td>  
+                                                                    </tr>  
                                                                 </table>
                                                             </div>
-                                                        </div>
-                                                </div>
-                                               
-                                             <div class="container-fluid">    
-                                                <div class="row">
-                                                    <div class="col-sm-6">
-                                                        <form class="form-horizontal">
-                                                            <div class="form-group">
-                                                                <label class="col-lg-2 control-label" for="inputName">Name</label>
-                                                                <div class="col-lg-10">
-                                                                    <input class="form-control" id="inputName" placeholder="Name" type="text">
-                                                                </div>
-                                                            </div>  
-                                                            <div class="form-group">
-                                                                <label class="col-lg-2 control-label" for="inputPhone">Phone</label>
-                                                                <div class="col-lg-10">
-                                                                    <input class="form-control" id="inputPhone" placeholder="Phone#" type="text">
-                                                                </div>
-                                                            </div>                                                      
-                                                            <div class="form-group">
-                                                                <label class="col-lg-2 control-label" for="inputEmail">Email</label>
-                                                                <div class="col-lg-10">
-                                                                    <input class="form-control" id="inputEmail" placeholder="Email" type="text">
-                                                                </div>
-                                                            </div>  
-                                                            <div class="form-group">
-                                                                <label class="col-lg-2 control-label" for="inputMessage">Message</label>
-                                                                <div class="col-lg-10">
-                                                                    <input class="form-control" id="inputMessage" placeholder="Message to Kitchen" type="text">
-                                                                </div>
-                                                            </div>  
-
-                                                        </form>
-                                                    </div>
-                                                    <div class="col-sm-6">
-                                                          <form class="form-horizontal"> 
-                                                        <div class="form-group text-center">
-                                                            
-                                                                <label class="radio-inline">
-                                                                  <input name="paymentRadioGroup" id="radio1" value="payNow" checked="" type="radio"> Pay Now
-                                                                </label>
-                                                                <label class="radio-inline">
-                                                                  <input name="paymentRadioGroup" id="radio2" value="payAtPickup" type="radio"> Pay At Pick up
-                                                                </label>
-
-                                                        </div>   
-
-                                                        <div id="cardinfo">
-                                                            <div class="form-group">
-                                                                <label class="col-lg-2 control-label" for="inputCardNumber">Card#</label>
-                                                                <div class="col-lg-10">
-                                                                    <input class="form-control" id="inputCardNumber" placeholder="CardNumber" type="text">
-                                                                </div>
-                                                            </div>  
-                                                            <div class="form-group">
-                                                                <label class="col-lg-2 control-label" for="inputPhone">ExpMM</label>
-                                                                <div class="col-lg-10">
-                                                                    <input class="form-control" id="inputPhone" placeholder="MM" type="text">
-                                                                </div>
-                                                            </div>
-                                                            <div class="form-group">
-                                                                <label class="col-lg-2 control-label" for="inputEmail">ExpYYYY</label>
-                                                                <div class="col-lg-10">
-                                                                    <input class="form-control" id="inputEmail" placeholder="YYYY" type="text">
-                                                                </div>
-                                                            </div>  
-                                                            <div class="form-group">
-                                                                <label class="col-lg-2 control-label" for="inputMessage">CID/CVV</label>
-                                                                <div class="col-lg-10">
-                                                                    <input class="form-control" id="inputMessage" placeholder="CVV" type="text">
-                                                                </div>
-                                                            </div>  
-                                                        </div>
-                                                        </form>
-                                                        
                                                     </div>
                                                 </div>
+                                                </div>
                                             </div>
-
-                                            </div>
-                                            <div class="modal-footer ">
+            <!--
+                                            <div class="modal-footer">
                                                 <div class="row">
                                                     <div class="col-sm-12 text-center">
-                                                        <!--<button class="btn btn-default" data-dismiss="modal" type="button">Continue Shopping...</button> -->
-                                                        <a href="ovIndex.html" type="button" class="btn btn-default">Continue Shopping...</a>
-                                                        <a href="confirmation.html" type="button" class="btn btn-success">Place Order</a>
-                                                        <!--<button class="btn btn-success"  type="button">Place Order</button>-->
+                                                        <button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
+                                                        <button class="btn btn-success"  type="button">Place Order</button>
                                                     </div>
                                                 </div>
 
                                             </div>
+  -->
+            <!-- OrderTracking modal code - End -->
             
                                     <!-- whichOrdersModal modal code - Start -->
                                 <div class="modal fade" id="whichOrdersModal">
@@ -249,10 +250,9 @@
             
             
             <!-- whichOrdersModal modal  code - End -->
-        
-                    <footer>
+                                <footer>
             <div class="row" >
-                <div class="navbar navbar-default navbar-bottom navbar-inverse" id="footer-poweredby">
+                <div class="navbar navbar-default navbar-fixed-bottom navbar-inverse" id="footer-poweredby">
                     <div class="container-fluid">
                         <div class="col-sm-12">
                             <p>Powered by
