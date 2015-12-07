@@ -386,3 +386,8 @@ margin-left: -15px;
 
       background: url('../../img/samosa.jpg') top center no-repeat;
    }
+    
+#queueInfo
+    {
+        margin: 0 10px;
+    }
