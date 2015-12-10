@@ -224,6 +224,242 @@
 				</div>
         </div>
         
+                        <!-- whichOrdersModal modal code - Start -->
+                                <div class="modal fade" id="whichOrdersModal">
+                                    <div class="modal-dialog modal-md">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button class="close" data-dismiss="modal">&times;</button>
+                                                <h3 class="modal-title text-center" ><span class="glyphicon glyphicon-grain" aria-hidden="true"></span> Which Order(s)</h3>
+                                            </div>
+                                            <div class="modal-body">
+
+                                                <div class="row" id="whichOrdersItem">
+                                                    <div class="col-md-12">
+                                                    <a href="orders.html" type="button" class="btn btn-success btn-lg btn-block">Today's</a>
+
+                                            <!--<button type="button" class="btn btn-success btn-lg btn-block">Today's</button>-->
+                                    </div>
+                                                </div>
+                                                
+                                                <div class="row" id="whichOrdersItem">
+                                                    <div class="col-md-12">
+                                                        <a href="orders.html" type="button" class="btn btn-success btn-lg btn-block">Yesterday's</a>
+                                            <!-- <button type="button" class="btn btn-success btn-lg btn-block">Yesterday's</button>-->
+                                    </div>
+                                                </div>
+                                                
+                                                
+                                                
+                                                <div class="row" id="whichOrdersItem">
+                                                     <div class="col-md-12">
+                                                         <div class="col-md-6 text-right">
+                                                        <div class="form-group-lg">
+                                                            <input class="form-control"  placeholder="Order#" type="text">
+                                                        </div>
+                                                             </div>
+                                                         <div class="col-md-6 text-left">
+                                                           <!-- <button type="submit" class="btn btn-success btn-lg">Submit</button> -->
+                                                            <a href="#OrderTrackingModal" class="btn btn-success" role="button" data-dismiss="modal" data-toggle="modal">Submit</a>
+
+                                                         </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                
+                                                
+                                            </div>
+                                            <div class="modal-footer ">
+                                                <div class="row">
+                                                    <div class="col-sm-12 text-center">
+                                                        <!--
+                                                        <button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
+                                                        <button class="btn btn-success"  type="button">Place Order</button>
+                                                        -->
+                                                        <p>Powered by
+                                                        <span id="poweredby">
+                                                            <a href="http://websheets.io"> Websheets</a>&trade;</span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>  
+            
+            
+            
+            <!-- whichOrdersModal modal  code - End -->
+            
+            
+                        <!-- modal code - Start -->
+                                <div class="modal fade" id="OrderTrackingModal">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button class="close" data-dismiss="modal">&times;</button>
+                                                <h3 class="modal-title text-center" ><span class="glyphicon glyphicon-grain" aria-hidden="true"></span>  Track Your Order [ #137 ]</h3>
+                                            </div>
+                                            <div class="modal-body">
+                                           
+                                                <div class=container-fluid>
+                                                <div class="row"> 
+                                                    
+                                                    
+                                                        <div class="table-responsive">
+                                                            <table class="table">
+                                                        <tr>
+
+                                                          <!-- STEP ONE -->
+                                                          <td class="step text-center">
+                                                            <img src="img/confirmation/1-on.png"  width='100' alt="Order Placed" />
+                                                            <br/>
+                                                            <b>✓</b>
+                                                            <br/>Order Placed
+                                                          </td>
+                                                          <td class="step text-center">
+                                                              <a href="#" id='moveOrderStatus'>
+                                                            <img src="img/confirmation/2-off.png" alt="In Kitchen" />
+                                                              </a>
+                                                              <br />
+                                                            <b>&nbsp;</b><br />In Kitchen
+                                                           </td>
+
+                                                           <td class="step text-center">
+                                                               <a href="#" id='moveOrderStatus'>
+                                                                    <img src="img/confirmation/3-off.png" alt="Ready for Pickup" /><br />
+                                                               </a>
+
+                                                           <b>&nbsp;</b><br />Ready for Pickup
+                                                           </td>
+
+                                                           <td class="step text-center">
+                                                                <a href="#" id='moveOrderStatus'>
+                                                                    <img src="img/confirmation/4-off.png" alt="Not Delivered" /><br />
+                                                               </a>
+
+                                                           <b>&nbsp;</b><br />Order Delivered
+                                                           </td>
+
+                                                        </tr>
+                                                      </table> 
+                                                    </div>
+                                                    </div>
+                                                
+
+                                                <div class="row">
+                                                <div class="table-responsive">
+                                                    <table class="table table-striped">
+                                                        <tr>
+                                                            <th id="itemName-th">Item Name</th>
+                                                            <th id="unitPrice-th">Unit Price</th>
+                                                            <th id="qty-th">Qty</th>
+                                                            <th id="price-th">Price</th>
+                                                            <th id="remove-th">Remove</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <td id="itemName-th">Plain Dosai</td>
+                                                            <td id="unitPrice-th">$6.99</td>
+                                                            <td id="qty-th">1</td>
+                                                            <td id="price-th">$6.99</td>
+                                                            <td id="remove-th"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></td>
+                                                        </tr>   
+                                                        <tr>
+                                                            <td id="itemName-th">Plain Dosai</td>
+                                                            <td id="unitPrice-th">$6.99</td>
+                                                            <td id="qty-th">5</td>
+                                                            <td id="price-th">$6.99</td>
+                                                            <td id="remove-th"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></td>
+                                                        </tr>                                                          
+                                                    </table>
+                                                </div>
+
+                                                </div>
+                                                <div class="row>">
+                                                    <div class="col-sm-6">
+                                                        <div class="well text-center">
+                                                        <div>
+                                                            Name: <strong>Customer Name</strong>
+                                                        </div>
+                                                        <div>
+                                                            Phone: <strong>Customer Phone</strong>
+                                                        </div>
+                                                        <div>
+                                                            Email: <strong>Customer Email</strong>
+                                                        </div>
+                                                        <div>
+                                                        Message: <strong>Message to Kitchen</strong>
+                                                        </div>
+                                                        <div>
+                                                        Time Ordered:<strong>TimeOrderReceived</strong>
+                                                        </div>
+                                                        <div>
+                                                        Total Item Ordered: <strong>TotalItem</strong>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                             <div class="table-responsive">
+                                                                <table class="table table-striped">
+                                                                    <tr>
+                                                                        <td id="right-td">Sub Total :</td>
+                                                                        <td id="right-td">$6.99</td>  
+                                                                    </tr>                                                                                                                                <tr>
+                                                                        <td id="right-td">Discount :</td>
+                                                                        <td id="right-td">( $1.99 )</td>  
+                                                                    </tr>
+                                                                     <tr>
+                                                                        <td id="right-td">Tax :</td>
+                                                                        <td id="right-td">$0.99</td>  
+                                                                    </tr>
+                                                                     <tr>
+                                                                        <td id="right-td"><strong>Total :</strong></td>
+                                                                        <td id="right-td"><strong>$5.99</strong></td>  
+                                                                    </tr> 
+                                                                     <tr>
+                                                                        <td id="right-td"><strong>Payment :</strong></td>
+                                                                        <td id="right-td"><strong>At Pickup</strong></td>  
+                                                                    </tr>  
+                                                                </table>
+                                                            </div>
+                                                    </div>
+                                                </div>
+                                                    <div class="row">
+                                                        <div class="col-sm-6">
+                                                        <div class="row" id="whichOrdersItem">
+                                                    <div class="col-md-12">
+                                                    <a href="#" type="button" class="btn btn-success btn-lg btn-block">Resend Confirmation Email</a>
+
+                                            <!--<button type="button" class="btn btn-success btn-lg btn-block">Today's</button>-->
+                                    </div>
+                                                </div>
+                                                            </div>
+                                                <div class="col-sm-6">
+                                                <div class="row" id="whichOrdersItem">
+                                                    <div class="col-md-12">
+                                                        <a href="#" type="button" class="btn btn-success btn-lg btn-block">Resend Confirmation SMS</a>
+                                            <!-- <button type="button" class="btn btn-success btn-lg btn-block">Yesterday's</button>-->
+                                    </div>
+                                                </div>
+                                                        </div>
+                                                    
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <div class="row">
+                                                    <div class="col-sm-12 text-center">
+                                                        <button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
+                                                        <!-- <button class="btn btn-success"  type="button">Place Order</button> -->
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>  
+            <!-- OrderTracking modal code - End -->
 
                     <footer>
             <div class="row" >
