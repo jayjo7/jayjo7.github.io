@@ -10,12 +10,11 @@
 <style>
 
 body {
-
     margin : 0;
 }
 
 .main-page {
-    background: url(images/homepage.jpg) no-repeat center center; 
+    background: url(../images/homepage.jpg) no-repeat center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -23,29 +22,6 @@ body {
   height : 100vh;
   width : 100%;
 }
-
-#MenuContainer {
-    height: 70px;
-    bottom:65%;
-    position:fixed;
-    width:100%;
-   text-align: center;
-}
-
-.skills {
-    font-size: 1.25em;
-    font-weight: 300;
-    background-color: rgba(0,0,0,.2);
-    color:white;
-}
-
-.new{
-
-    font-size: 0.5em;
-    font-weight: 300;
-
-}
-
 
 .sup{
 color:red;
@@ -59,11 +35,17 @@ background-color: red;
 }
 
 
-
+#MenuContainer {
+    height: 70px;
+    bottom:65%;
+    position:fixed;
+    width:100%;
+	 text-align: center;
+}
 ul#navigation {
     height: 100px;
     list-style: none;
-    margin-top: 50px;
+    margin: 0;
     padding: 0;
     border: 1px solid #ccc;
     border-width: 1px 0;
@@ -93,7 +75,7 @@ ul#navigation li.last {
 
 a {
   color: white;
-font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+font-family: Rockwell, 'Courier Bold', Courier, Georgia, Times, 'Times New Roman', serif;
 	font-size: 21px;
 	font-style: normal;
 	font-variant: normal;
@@ -116,13 +98,13 @@ font-family: 'Arial Bold';
   ul#navigation {
          height: 200px;
     list-style: none;
-    margin-top: 50px;
+    margin: 0;
     padding: 0;
     border: 1px solid #ccc;
     border-width: 1px 0;
     text-align: center;
     font-size: 22px;
-    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family:'Cham-WebFont', Arial, sans-serif;
     background-color: #DF7401;
 	align-items:center;
 	padding-top:2%;
@@ -136,22 +118,11 @@ font-family: 'Arial Bold';
 <body>
     <div class="main-page">
       <div id="MenuContainer">
-          <div>
-		        <img src="images/logo.png" height="100">
-          </div>
-          <div>
-            <span class="skills">Always a better Pizza. Always a better deal!</span>
-          </div>
-          <div>
+		<img src="../images/logo.png" height="100">
+		<h3><mark>Always a better Pizza. Always a better deal!</mark></h3>
     <ul id="navigation" style="text-align:center">
   
-		<div class="col-sm-4">
-        <div>
-          <a href="http://canampizza.com/" data-toggle="tooltip" title="New location... Order Online!!!">Bellevue Downtown </a> <sup><em class="label label-danger new">New</em></sup>
-        </div>
-          <div class="label label-success new">
-            <span class="glyphicon glyphicon-cutlery"></span>&nbsp;<em>Order Online Now!</em>
-          </div>
+		<div class="col-sm-4"><sup> <mark>New! </mark></sup><a href="http://canampizza.com/" >Bellevue Downtown </a><sub><mark>Order Online!</mark></sub>
 		</div>
 	
 		<a href="http://canampizza.com/" >
@@ -167,7 +138,6 @@ font-family: 'Arial Bold';
 		 <div class="col-sm-2">Federal Way</div>
 		 </a>
     </ul>
-  </div>
 </div>
 
 </div>
